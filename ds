@@ -1,0 +1,30 @@
+commit 0ccea1724a83e291155ceb2359c3ab6ebbbcc43b
+Author: Marcin77 <mwas@go2.pl>
+Date:   Thu Sep 6 02:32:38 2012 +0200
+
+    Przystosowanie pod nowy kernel
+
+commit 5cbae4ffffb91c9ca93cddf118db71050019ac1a
+Author: Marcin77 <mwas@go2.pl>
+Date:   Tue Sep 4 20:18:49 2012 +0200
+
+    zmiana nazwy katalogów
+
+commit 372fc5365140cacb20b8b4828a3008586832ec0b
+Merge: a57ff03 966c495
+Author: Marcin77 <mwas@go2.pl>
+Date:   Tue Sep 4 19:47:34 2012 +0200
+
+    Merge github.com:marcin77/AZConcinnityHD_Marcin77_mod
+
+commit a57ff03d81a507277aae1e08c446578bd62e5299
+Author: Marcin77 <mwas@go2.pl>
+Date:   Tue Sep 4 19:35:33 2012 +0200
+
+    Pierwsza aktualizacja
+
+commit 966c495469673e88e2fa27e10b578f603e6add8e
+Author: Marcin <administrator@ubuntu.(none)>
+Date:   Tue Sep 4 19:15:49 2012 +0200
+
+    first commit
