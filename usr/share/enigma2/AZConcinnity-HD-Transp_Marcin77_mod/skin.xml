@@ -254,7 +254,7 @@
     <convert type="ServiceName">Name</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="396,38" zPosition="1" size="315,20" font="Regular;17" halign="left" foregroundColor="grey" backgroundColor="transpBlack" transparent="1">
-    <convert type="DMCHDServiceInfo">SatName</convert>
+    <convert type="ExtendedServiceInfo">SatName</convert>
   </widget>
   <eLabel name="new eLabel" position="999,79" size="2,52" backgroundColor="black" zPosition="3" transparent="0" />
   <eLabel text="SNR:" position="1011,79" size="52,18" font="Regular; 16" backgroundColor="grey" transparent="1" foregroundColor="black" />
@@ -498,7 +498,7 @@
     <convert type="ServiceName">Name</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="396,38" zPosition="1" size="315,20" font="Regular;17" halign="left" foregroundColor="grey" backgroundColor="transpBlack" transparent="1">
-    <convert type="DMCHDServiceInfo">SatName</convert>
+    <convert type="ExtendedServiceInfo">SatName</convert>
   </widget>
   <eLabel name="new eLabel" position="999,79" size="2,52" backgroundColor="black" zPosition="3" transparent="0" />
   <eLabel text="SNR:" position="1011,79" size="52,18" font="Regular; 16" backgroundColor="grey" transparent="1" foregroundColor="black" />
@@ -578,6 +578,21 @@
     <convert type="ExtremeInfo">ConaxEcm</convert>
     <convert type="ConditionalShowHide" />
   </widget>
+     <widget source="session.CurrentService" render="Label" backgroundColor="transpBlack" font="Regular; 16" halign="left" position="430,142" size="150,20" transparent="1" zPosition="1" valign="center" foregroundColor="undcdcdc" noWrap="1">
+    <convert type="ExtraInfo">CryptInfo</convert>
+  </widget>
+     <!--<widget source="session.CurrentService" render="Label" backgroundColor="transpBlack" font="Regular; 16" halign="left" position="600,142" size="170,20" transparent="1" zPosition="1" valign="center" foregroundColor="undcdcdc" noWrap="1">
+    <convert type="gChSelectExtraInfo">TInfoFull</convert>
+  </widget> -->
+       <widget source="session.CurrentService" render="Label" backgroundColor="transpBlack" font="Regular; 16" halign="left" position="580,142" size="370,20" transparent="1" zPosition="1" valign="center" foregroundColor="undcdcdc" noWrap="1">
+    <convert type="gExtraTuner">TunerInfo</convert>
+  </widget>
+  <!-- <widget source="session.CurrentService" render="Label" backgroundColor="transpBlack" font="Regular; 16" halign="left" position="950,142" size="50,20" transparent="1" zPosition="1" valign="center" foregroundColor="undcdcdc" noWrap="1">
+    <convert type="gExtraTuner">OrbitalPosition</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" backgroundColor="transpBlack" font="Regular; 16" halign="left" position="1000,142" size="100,20" transparent="1" zPosition="1" valign="center" foregroundColor="undcdcdc" noWrap="1">
+    <convert type="ServiceOrbitalPosition">Orbital_Position</convert>
+  </widget> -->
  </screen>
 
   <screen name="InfoBarExtended" position="70,530" size="1140,170" title="InfoBar" flags="wfNoBorder">
@@ -594,7 +609,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="396,37" zPosition="1" size="315,20" font="Regular;18" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
-      <convert type="DMCHDServiceInfo">SatName</convert>
+      <convert type="ExtendedServiceInfo">SatName</convert>
     </widget>
     <ePixmap position="800,23" size="36,20" zPosition="1" pixmap="AZConcinnity-HD-Transp_Marcin77_mod/icons/ico_format_off.png" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" position="800,23" size="36,20" zPosition="2" pixmap="AZConcinnity-HD-Transp_Marcin77_mod/icons/ico_format_on.png" alphatest="blend">
@@ -719,7 +734,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
-  <screen name="RecInfoBar" position="70,53" size="700,26" zPosition="1" title="Records Info" flags="wfNoBorder">
+  <screen name="RecInfoBar" position="70,53" size="700,23" zPosition="1" title="Records Info" flags="wfNoBorder">
   <!--<ePixmap pixmap="AZConcinnity-HD-Transp_Marcin77_mod/recbar6.png" position="0,0" zPosition="1" size="700,26" transparent="0"/>-->
   <widget source="session.RecordState" render="Pixmap" pixmap="AZConcinnity-HD-Transp_Marcin77_mod/icons/ico_rec_on.png" position="9,3" zPosition="2" size="20,20" alphatest="on">
     <convert type="ConditionalShowHide">Blink</convert>
@@ -1188,13 +1203,13 @@
   </screen>
   <screen name="ChannelSelection" position="center,center" size="1100,605" title="Channel Selection" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="AZConcinnity-HD-Transp_Marcin77_mod/menu/mainbg.png" />
-    <widget source="global.CurrentTime" render="Label" position=" 20,22" size=" 80,25" font="Regular;23" foregroundColor="black" backgroundColor="grey" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="20,25" size=" 80,25" font="Regular;23" foregroundColor="black" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="111,22" size="425,25" font="Regular;23" foregroundColor="darkblue" backgroundColor="grey" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="111,25" size="425,25" font="Regular;23" foregroundColor="darkblue" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Date</convert>
     </widget>
-    <eLabel text="Channel Selection" position="547,15" size="538,43" font="Regular;35" halign="right" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <eLabel text="Channel Selection" position="547,20" size="538,43" font="Regular;35" halign="right" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget source="Title" render="Label" position="20,75" size="700,28" font="Regular;23" backgroundColor="background" transparent="1" />
     <eLabel position="20,105" size="700,2" backgroundColor="grey" />
     <widget name="list" position="20,110" size="700,450" scrollbarMode="showOnDemand" selectionPixmap="AZConcinnity-HD-Transp_Marcin77_mod/menu/sel700x30.png" colorServiceDescription="yellow" colorServiceDescriptionSelected="yellow" picServiceEventProgressbar="AZConcinnity-HD-Transp_Marcin77_mod/progcl.png" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey" foregroundColorServiceNotAvail="#777777" serviceItemHeight="30" serviceNumberFont="Regular;21" serviceNameFont="Regular;23" serviceInfoFont="Regular;21" transparent="1" />
